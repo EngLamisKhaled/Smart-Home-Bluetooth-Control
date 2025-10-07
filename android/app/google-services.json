@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438344204669",
+    "project_id": "embsystem-8291f",
+    "storage_bucket": "embsystem-8291f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438344204669:android:c6ddb277471958033f4c14",
+        "android_client_info": {
+          "package_name": "com.example.embeded_system_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo9zCLLVLLu3nyV4JPrRotJ75QHv1oeqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
