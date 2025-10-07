@@ -1,16 +1,36 @@
-# embeded_system_project
+#  Smart Home Bluetooth Control
 
-A new Flutter project.
+> An embedded + mobile solution to control home **lighting** and **door locking** over **Bluetooth** using an ESP32/HC-05 module and a Flutter app.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Overview
+This project demonstrates a low-cost smart home system:
+- **Flutter mobile app** sends commands via **Bluetooth (BLE/Classic)**.
+- **ESP32/Arduino** receives commands and toggles **lights** and a **servo/solenoid door lock**.
+- Basic **state feedback** is displayed in the app UI.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+##  Tech Stack
+
+| Layer | Technologies |
+|------|--------------|
+| **Mobile App** | Flutter, Dart, `flutter_blue` / `blue_thermal_printer` (for Classic) |
+| **MCU** | ESP32 (Arduino Core) or Arduino + HC-05 |
+| **Actuators** | Relay module (for light), Servo/Solenoid (for lock) |
+| **Tools** | VS Code, PlatformIO/Arduino IDE |
+
+---
+
+##  Features
+- ON/OFF control for one or more light channels
+- Lock/Unlock door via servo/solenoid
+- Auto-reconnect to paired device
+- Simple status feedback (LED/Toast/UI badge)
+
+---
+
+##  System Architecture
